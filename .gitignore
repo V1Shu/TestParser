@@ -6,3 +6,4 @@ out/
 >>>>>>> 04f86bb21d8ca0f78e4ff243dc8c027414adf3dd
 target/
 *.iml
+products.csv
