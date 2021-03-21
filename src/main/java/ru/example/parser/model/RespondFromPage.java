@@ -4,6 +4,9 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+/**
+ * Contains respond from page with data
+ */
 public class RespondFromPage {
 
     private String contextId;

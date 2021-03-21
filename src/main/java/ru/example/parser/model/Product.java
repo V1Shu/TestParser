@@ -1,5 +1,8 @@
 package ru.example.parser.model;
 
+/**
+ * Contains information about the product from page
+ */
 public class Product {
     private Long productId;
     private Long sellerId;
@@ -26,6 +29,10 @@ public class Product {
     private Long itemEvalTotalNum;
     private Long gmtCreate;
 
+    /**
+     * Print head to file
+     * @return name of the fields
+     */
     public static String printFirstLine() {
         return "productId" +
                 ", sellerId" +

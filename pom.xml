@@ -31,7 +31,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ru.example.app.Application</mainClass>
+                            <mainClass>ru.example.parser.Application</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
