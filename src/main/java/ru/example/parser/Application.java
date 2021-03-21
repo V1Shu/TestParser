@@ -21,7 +21,7 @@ public class Application {
             CloseableHttpResponse closeableHttpResponse = closeableHttpClient.execute(httpGet)) {
             HttpEntity httpEntity = closeableHttpResponse.getEntity();
             String outputString = EntityUtils.toString(httpEntity);
-            String productString = outputString.substring(outputString.indexOf('['), outputString.indexOf(']')+1);
+            String productString = outputString.substring(outputString.indexOf('{'), outputString.lastIndexOf('}')+1);
             System.out.println(productString);
             JsonObject jsonObject = JsonParser.parseString(productString).getAsJsonObject();
             for (Object object : jsonObject.entrySet()) {
